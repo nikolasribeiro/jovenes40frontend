@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jovenes40 | Blog</title>
+	<title>Jovenes40 | Militancia</title>
 
 	<!-- Estilos personalizados -->
 	<link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/blog.css">
+	<link rel="stylesheet" href="css/militancia.css">
 
 
 	<!-- FontAwesome -->
@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
 
+
 </head>
 <body>
 	<!---------------- Navbar ------------------>
@@ -31,6 +32,9 @@
 		<div class="nav-menu flex-row">
 			<div class="nav-brand">
 				<a href="index.html" class="text-gris">
+					<!--
+					J<span>40</span>
+					-->
 					<img src="img/logo.jpeg" alt="">
 				</a>
 			</div>
@@ -61,93 +65,83 @@
 	</nav>
 	<!---------------- /Navbar ----------------->
 
-   
-	<!-- BLOG -->
-	<div class="contenedor-blog">
 
-		<div class="posteo">
-			<!-- inicio blogs -->
-			<div class="imagen-posteo">
-				<div class="contenedor-background-imagen">
-					<img src="assets/Blog-post/blog1.png" class="background-imagen">
-				</div>
-				<div class="detalles-publicacion">
-					<a href="#" class="autor"><i class="fas fa-user"></i>Nicolas Ribeiro</a>
-					<span class="date"><i class="fas fa-calendar-alt"></i>13 de Febrero</span>
+	<!-- Militancia -->
+	<section>
+		<div class="contenedor-formulario">
+			<div class="informacion">
+				<div>
+					<h2>¿Te gustaria integrar el grupo de Jovenes40?</h2>
+					<ul class="info">
+						<li>
+							<p>
+								Si te interesa la politica, ¡esta es tu agrupacion!
+								Ingresa tus datos a continuacion y te estaremos contactando
+								a la brevedad.
+							</p>
+						</li>
+						<li>
+							<p>
+								La agrupacion de jovenes es una agrupacion politica voluntaria
+								perteneciente a la lista 40 del Partido Nacional. 
+								Los datos que proporciones a continuacion seran tomado unicamente
+								con fines de contacto.
+							</p>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="post-data">
-				<h1 class="titulo">Campamento de jovenes</h1>
-				<h2 class="subtitulo">Un momento de relax entre tanta politica</h2>
-				<p class="descripcion">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi libero 
-					hic dolore, repudiandae eum dignissimos quas ipsum explicabo sint, quos
-					fugit voluptatum quisquam eos quod provident fuga earum repellendus 
-					officiis.
-				</p>
-				<div class="cta"><a href="#">Leer Mas &rarr;</a></div>
+			<div class="formulario-contacto">
+				<form method="POST">
+					<h3> Comenzar a Militar </h3>
+					<p class="alert">Todos los campos con * son obligatorios</p>
+					<div class="formBox">
+	
+						<div class="inputBox w-50">
+							<input type="text" required>
+							<span>Nombre*</span>
+						</div>
+	
+						<div class="inputBox w-50">
+							<input type="text" required>
+							<span>Apellido*</span>
+						</div>
+	
+						<div class="inputBox w-50">
+							<input type="text" required>
+							<span>Celular*</span>
+						</div>
+	
+						<div class="inputBox w-50">
+							<input type="email">
+							<span>Correo Electronico</span>
+						</div>
+	
+						<div class="inputBox w-50">
+							<input type="text">
+							<span>Municipio</span>
+						</div>
+	
+						<div class="inputBox w-50">
+							<input type="text" required>
+							<span>Barrio*</span>
+						</div>
+	
+						<div class="inputBox w-100">
+							<input type="submit" value="Enviar">
+						</div>
+					</div>
+				</form>
 			</div>
-			
 		</div>
-
-		<div class="posteo">
-			<!-- inicio blogs -->
-			<div class="imagen-posteo">
-				<div class="contenedor-background-imagen">
-					<img src="assets/Blog-post/blog2.png" class="background-imagen">
-				</div>
-				<div class="detalles-publicacion">
-					<a href="#" class="autor"><i class="fas fa-user"></i>Fabian Bravetti</a>
-					<span class="date"><i class="fas fa-calendar-alt"></i>10 de Febrero</span>
-				</div>
-			</div>
-			<div class="post-data">
-				<h1 class="titulo">Editorial: Las leyes y su manejo</h1>
-				<h2 class="subtitulo">Como las leyes nos ayudan a convivir</h2>
-				<p class="descripcion">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi libero 
-					hic dolore, repudiandae eum dignissimos quas ipsum explicabo sint, quos
-					fugit voluptatum quisquam eos quod provident fuga earum repellendus 
-					officiis.
-				</p>
-				<div class="cta"><a href="#">Leer Mas &rarr;</a></div>
-			</div>
-			
-		</div>
-
-		<div class="posteo">
-			<!-- inicio blogs -->
-			<div class="imagen-posteo">
-				<div class="contenedor-background-imagen">
-					<img src="assets/Blog-post/blog3.png" class="background-imagen">
-				</div>
-				<div class="detalles-publicacion">
-					<a href="#" class="autor"><i class="fas fa-user"></i>Nicolas Ribeiro</a>
-					<span class="date"><i class="fas fa-calendar-alt"></i>8 de Febrero</span>
-				</div>
-			</div>
-			<div class="post-data">
-				<h1 class="titulo">Opinion: Manejo de politicas economicas</h1>
-				<h2 class="subtitulo">Propuestas de politicas economicas departamentales</h2>
-				<p class="descripcion">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi libero 
-					hic dolore, repudiandae eum dignissimos quas ipsum explicabo sint, quos
-					fugit voluptatum quisquam eos quod provident fuga earum repellendus 
-					officiis.
-				</p>
-				<div class="cta"><a href="#">Leer Mas &rarr;</a></div>
-			</div>
-			
-		</div>
-
-
-	</div>
-	<!-- BLOG -->
+	</section>
+	<!-- Militancia -->
 
 
 	<!----------------- Footer ------------------->
 	<footer class="footer">
 		<div class="container">
+
 			<div class="sobre-nosotros">
 				<h2>Sobre Nosotros</h2>
 				<img src="img/img-footer.jpeg" class="img-footer">

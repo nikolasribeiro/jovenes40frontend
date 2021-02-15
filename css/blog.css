@@ -158,13 +158,6 @@
 }
 
 
-
-/* sidebar */
-.sidebar{
-    text-align: center;
-    padding: 20px;
-}
-
 @media screen and (min-width: 800px){
     .posteo{
         flex-direction: row;
