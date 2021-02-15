@@ -78,3 +78,59 @@
 .h-6{
   grid-row: span 6;
 }
+
+@media screen and (max-width: 800px){
+
+  .contenido{
+    grid-template-columns: 1fr;
+  }
+
+  .w-1{
+    grid-column: span 1;
+  }
+  
+  .w-2{
+    grid-column: span 1;
+  }
+  
+  .w-3{
+    grid-column: span 1;
+  }
+  
+  .w-4{
+    grid-column: span 1;
+  }
+  
+  .w-5{
+    grid-column: span 1;
+  }
+  
+  .w-6{
+    grid-column: span 1;
+  }
+  
+  .h-1{
+    grid-row: span 2;
+  }
+  
+  .h-2{
+    grid-row: span 2;
+  }
+  
+  .h-3{
+    grid-row: span 2;
+  }
+  
+  .h-4{
+    grid-row: span 2;
+  }
+  
+  .h-5{
+    grid-row: span 2;
+  }
+  
+  .h-6{
+    grid-row: span 2;
+  }
+
+}

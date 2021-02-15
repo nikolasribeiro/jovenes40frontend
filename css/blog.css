@@ -1,5 +1,8 @@
 /* CSS variables */
 :root{
+
+    --Roboto: 'Roboto', sans-serif;
+
     /* colores */
     --principal: #FEF200;
     --secundario: #00ADEF;
@@ -14,7 +17,7 @@
     display: grid;
     padding: 20px;
     margin-top: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .posteo{
@@ -24,6 +27,7 @@
     padding: 20px;
     grid-column: span 2;
     border-radius: 20px 0px 20px 0px;
+    margin-bottom: 3rem;
 }
 
 .imagen-posteo{
@@ -33,19 +37,25 @@
     overflow: hidden;
 }
 
-.background-imagen{
+.contenedor-background-imagen{
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: url('/assets/Blog-post/blog1.png') center no-repeat;
-    background-size: cover;
     z-index: -1;
     transition: transform 1s ease-in-out;
+    overflow: hidden;
+    
 }
 
-.posteo:hover .background-imagen{
+.contenedor-background-imagen .background-imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posteo:hover .contenedor-background-imagen{
     transform: scale(1.5);
 }
 
@@ -83,8 +93,9 @@
 }
 
 .titulo{
-    font-size: 60px;
+    font-size: 54px;
     line-height: 1;
+    overflow: hidden;
 }
 
 .subtitulo{
@@ -94,12 +105,109 @@
     margin: 20px 0px 25px 0;
 }
 
+.descripcion{
+    position: relative;
+}
+
+.descripcion::first-letter{
+    margin-left: 1rem;
+}
+
+.descripcion::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .5rem;
+    height: 1.5rem;
+    background-image: var(--gradiente-amarillo);
+    border-radius: 2rem;
+}
+
+.cta{
+    text-align: right;
+    font-weight: bold;
+    margin-top: 1rem;
+    height: 3rem;
+}
+
+.cta a{
+    background-image: var(--gradiente-azul);
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    font-size: 1.7rem;
+    font-family: var(--Roboto);
+}
+
+.cta a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    width: 100%;
+    height: 3px;
+    background-image: var(--gradiente-azul);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.cta a:hover::before{
+    transform: scaleX(1);
+}
 
 
 
-
-
+/* sidebar */
 .sidebar{
     text-align: center;
     padding: 20px;
+}
+
+@media screen and (min-width: 800px){
+    .posteo{
+        flex-direction: row;
+        max-height: 75rem;
+    }
+
+    .imagen-posteo{
+        flex-basis: 40%;
+        height: unset;
+    }
+
+    .detalles-publicacion{
+        transform: translateX(-100%);
+        transition: transform .5s;
+    }
+
+
+    .posteo:hover .detalles-publicacion{
+        transform: translateX(0);
+    }
+
+    .autor{
+        transform: translateY(-3rem);
+        opacity: 0;
+        transition-delay: .3s;
+    }
+
+    .date{
+        transform: translateY(3rem);
+        opacity: 0;
+        transition: all .5s .3s;
+    }
+
+    .posteo:hover .autor,
+    .posteo:hover .date{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .post-data{
+        flex-basis: 60%;
+    }
+
+
+
 }

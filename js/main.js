@@ -19,7 +19,7 @@ function main(){
     
     importantDates.forEach(element => {
         if(element.innerHTML.includes(day)){
-            console.log(element.className);
+            //console.log(element.className);
             element.className += " hoy";
         }
     });
@@ -29,6 +29,5 @@ function main(){
     const actualYear = document.querySelector("#actualYear");
     let year = today.getFullYear();
     actualYear.innerHTML = year;
-
 
 }
