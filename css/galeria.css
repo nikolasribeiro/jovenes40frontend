@@ -1,3 +1,10 @@
+.titulo-galeria{
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  font-size: 40px;
+}
+
 .contenido{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
