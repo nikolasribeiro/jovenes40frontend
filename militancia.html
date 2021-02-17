@@ -68,70 +68,67 @@
 
 	<!-- Militancia -->
 	<section>
+		<!-- Formulario -->
 		<div class="contenedor-formulario">
-			<div class="informacion">
-				<div>
-					<h2>¿Te gustaria integrar el grupo de Jovenes40?</h2>
-					<ul class="info">
-						<li>
-							<p>
-								Si te interesa la politica, ¡esta es tu agrupacion!
-								Ingresa tus datos a continuacion y te estaremos contactando
-								a la brevedad.
-							</p>
-						</li>
-						<li>
-							<p>
-								La agrupacion de jovenes es una agrupacion politica voluntaria
-								perteneciente a la lista 40 del Partido Nacional. 
-								Los datos que proporciones a continuacion seran tomado unicamente
-								con fines de contacto.
-							</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="formulario-contacto">
-				<form method="POST">
-					<h3> Comenzar a Militar </h3>
-					<p class="alert">Todos los campos con * son obligatorios</p>
-					<div class="formBox">
-	
-						<div class="inputBox w-50">
-							<input type="text" required>
-							<span>Nombre*</span>
-						</div>
-	
-						<div class="inputBox w-50">
-							<input type="text" required>
-							<span>Apellido*</span>
-						</div>
-	
-						<div class="inputBox w-50">
-							<input type="text" required>
-							<span>Celular*</span>
-						</div>
-	
-						<div class="inputBox w-50">
-							<input type="email">
-							<span>Correo Electronico</span>
-						</div>
-	
-						<div class="inputBox w-50">
-							<input type="text">
-							<span>Municipio</span>
-						</div>
-	
-						<div class="inputBox w-50">
-							<input type="text" required>
-							<span>Barrio*</span>
-						</div>
-	
-						<div class="inputBox w-100">
-							<input type="submit" value="Enviar">
-						</div>
+			<div class="registrarse">
+				<form class="formulario-registrarse">
+					<h2 class="titulo">¡Comienza a Militar!</h2>
+					<p class="alerta">Todos los campos con * son obligatorios</p>
+					
+					<div class="input-fields">
+						<input type="text" placeholder="Nombre Completo*" required>
 					</div>
+
+					<div class="input-fields">
+						<input type="email" placeholder="Email*" required>
+					</div>
+
+					<div class="input-fields">
+						<input type="text" placeholder="Celular*" required>
+					</div>
+					
+					<div class="input-fields">
+						<input type="text" placeholder="Credencial Civica">
+					</div>
+
+					<div class="input-fields">
+						<input type="text" placeholder="Departamento*" required>
+					</div>
+					
+					
+					<div class="input-fields">
+						<input type="text" placeholder="Barrio*" required>
+					</div>
+
+					<div class="input-fields">
+						<input type="text" placeholder="Municipio">
+					</div>
+					
+					<input type="submit" value="Enviar" class="btn solid">
+					
 				</form>
+			</div>
+		</div>
+
+		<!-- Paneles derecha -->
+		<div class="contenedor-paneles-informacion">
+			<div class="panel panel-izquierdo">
+				<div class="contenido">
+					<h3>¿Te gustaria integrar el grupo de Jovenes40?</h3>
+					<p>
+						Si te interesa la politica, ¡esta es tu agrupacion!
+						Ingresa tus datos a continuacion y te estaremos contactando
+						a la brevedad.
+					</p>
+					<p>
+						La agrupacion de jovenes es una agrupacion politica voluntaria
+						perteneciente a la lista 40 del Partido Nacional. 
+						Los datos que proporciones a continuacion seran tomado unicamente
+						con fines de contacto.
+					</p>
+				</div>
+
+				<img src="img/undraw_subscribe_vspl.svg" class="imagen">
 			</div>
 		</div>
 	</section>
