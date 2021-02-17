@@ -157,7 +157,7 @@
     transform: scaleX(1);
 }
 
-
+/* tablet */
 @media screen and (min-width: 800px){
     .posteo{
         flex-direction: row;
@@ -200,7 +200,29 @@
     .post-data{
         flex-basis: 60%;
     }
+}
 
+/* celular pantalla grande */
+@media screen and (min-width: 425px){
+    .titulo{
+        font-size: 30px;
+    }
+}
 
+/* celular pantalla mediana */
+@media screen and (min-width: 375px){
+    .titulo{
+        font-size: 25px;
+    }
+}
 
+/* celular pantalla chica */
+@media screen and (min-width: 320px){
+    .titulo{
+        font-size: 20px;
+    }
+
+    .cta a{
+        font-size: 1.3rem;
+    }
 }
